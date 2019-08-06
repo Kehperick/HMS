@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="706.0" prefWidth="1294.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.management.system.mainfxmlController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1298.0" style="-fx-background-color: white;">
+         <children>
+            <HBox layoutX="87.0" layoutY="227.0" prefHeight="706.0" prefWidth="1292.0" style="-fx-background-color: #f1f1f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox fx:id="rightBaseContainer" prefHeight="706.0" prefWidth="274.0" style="-fx-background-color: #1976d2;">
+                     <children>
+                        <StackPane prefHeight="278.0" prefWidth="271.0">
+                           <children>
+                              <ImageView fx:id="menuImg" fitHeight="279.0" fitWidth="273.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@icons/image.png" />
+                                 </image>
+                              </ImageView>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="29.0" layoutY="176.0" prefHeight="52.0" prefWidth="50.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="LM">
+                                       <font>
+                                          <Font name="Roboto Regular" size="25.0" />
+                                       </font>
+                                       <effect>
+                                          <DropShadow color="#575757" height="10.0" radius="4.5" width="10.0" />
+                                       </effect>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="235.0" prefHeight="21.0" prefWidth="137.0" text="Library Manager" textFill="WHITE">
+                                       <font>
+                                          <Font name="Roboto Regular" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="homeBtn" onAction="#openBorrowScene" prefHeight="60.0" prefWidth="276.0" ripplerFill="#323f4a" text=" Home            " textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="36.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_home_white_3x.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="borrowedBtn" onAction="#openBorrowedScene" prefHeight="60.0" prefWidth="276.0" text="   Issued Books" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="36.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_book_white_3x.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="60.0" prefWidth="273.0">
+                           <children>
+                              <JFXButton fx:id="notificationBtn" layoutX="-3.0" onAction="#openNotificationScene" prefHeight="60.0" prefWidth="276.0" text="   Notifications" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="36.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_notifications_white_3x.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="5.0" mouseTransparent="true" prefHeight="21.0" prefWidth="23.0" style="-fx-background-color: #e42222; -fx-background-radius: 20; -fx-border-radius: 20;" text="4" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto Regular" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="aboutUsBtn" onAction="#openAboutUsDialog" prefHeight="60.0" prefWidth="276.0" text="            About LMS             " textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="34.0" layoutY="14.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_info_outline_white_3x.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="helpBtn" onAction="#openHelpDialog" prefHeight="60.0" prefWidth="276.0" text="  Help                  " textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="36.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_live_help_white_3x.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane>
+                           <children>
+                              <JFXButton fx:id="exitBtn" onAction="#closeWindow" prefHeight="60.0" prefWidth="276.0" text=" Close                   " textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato Regular" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="36.0" layoutY="15.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/ic_close_white_18pt_3x.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="706.0" prefWidth="1031.0" style="-fx-background-color: #f9f9f9;">
+                     <children>
+                        <Pane fx:id="headerToolbar" prefHeight="59.0" prefWidth="1025.0" style="-fx-background-color: #1976d2;">
+                           <effect>
+                              <DropShadow color="#b2b2b2" height="5.0" offsetY="1.0" radius="0.75" spread="1.0" width="0.0" />
+                           </effect>
+                           <children>
+                              <Label fx:id="labelHeader" layoutX="26.0" layoutY="14.0" text="Home" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto Regular" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Pane fx:id="moreBtnPane" layoutX="966.0" layoutY="14.0" onMouseClicked="#openMoreActionPopup">
+                                 <children>
+                                    <ImageView fitHeight="31.0" fitWidth="31.0" mouseTransparent="true" onMouseClicked="#openMoreActionPopup" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@icons/ic_more_vert_white_3x.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children></Pane>
+                        <AnchorPane fx:id="scrollpane" prefHeight="647.0" prefWidth="1025.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

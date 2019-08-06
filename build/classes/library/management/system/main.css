@@ -1,0 +1,204 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 2, 2019, 8:33:21 PM
+    Author     : Keh Perick
+*/
+.aboutBtn:selected{
+    -fx-text-fill:  #1976d2;
+}
+
+
+/*dark theme styling**/
+.jfx-combo-box{
+    -fx-background-color: white;
+}
+.jfx-combo-box .list-view:focused .list-cell:hover{
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+}
+
+.jfx-text-field{
+    -fx-background-color: white;
+    -fx-prompt-text-fill: black;
+}
+.jfx-date-picker{
+    -fx-background-color: white;
+    
+}
+.pane{
+    -fx-background-color: white;
+}
+.pane-2{
+    -fx-border-color:#f1f1f1;
+}
+
+/* dark stylinf for the notification scence*/
+.notification-board{
+    -fx-background-color: #f1f1f1;
+}
+.notification-item{
+    -fx-background-color: white;
+    
+}
+.clear-all-notification-btn{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+
+.notification-header{
+    -fx-text-fill: black;
+}
+.notification-content{
+    -fx-text-fill: black;
+}
+.notification-delete-btn{
+    -fx-text-fill: red;
+}
+
+/*White mode style sheet */
+/**
+.pane{
+    -fx-background-color: white;
+} **/
+
+.jfx-snackbar-content{
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-pref-height:10px;
+    
+}
+.jfx-snackbar-toast{
+    -fx-text-fill: #e53935;
+    -fx-font-family: 'Lato';
+    -fx-font-size:14px;
+}
+
+
+.jfx-snackbar-action{
+    -fx-text-fill: white;
+     -fx-font-family:'Lato';
+    -fx-font-size:14px;
+}
+
+.tree-table-view{
+    -fx-background-color: white;
+    -fx-tree-table-rippler-color: #1976d2;
+}
+.tree-table-view:focused{
+    -fx-background-color: white;
+    -fx-tree-table-rippler-color: #1976d2;
+}
+
+.tree-table-view .tree-table-row-cell{
+    -fx-background-color: white;
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected{
+    -fx-background-color: -fx-tree-table-rippler-color;
+}
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell{
+    -fx-text-fill: white;
+}
+
+.tree-table-view:hover .tree-table-row-cell:hover{
+    -fx-background-color: rgba(0,0,0,0.35);
+}
+.tree-table-view:hover .tree-table-row-cell:hover .tree-table-cell{
+    -fx-text-fill: black;
+}
+
+.tree-table-view .tree-table-row-cell .tree-table-cell{
+    -fx-text-fill: black;
+    -fx-font-family:'Lato','Roboto';
+    -fx-font-size:15px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    
+}
+.tree-table-view .column-header{
+    -fx-background-color: white;
+    -fx-font-family:'Lato','Roboto';
+    -fx-font-size:16px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    
+}
+.tree-table-view .column-header .label{
+    -fx-text-fill:#1976d2;
+     -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/*layer above the table view of the borrowd list*/
+.upperContainer{
+    -fx-background-color: white;
+}
+.search-bar{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: grey;
+}
+.count-label{
+    -fx-text-fill: black;
+}
+
+
+.tree-table-view .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+.tree-table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+.tree-table-view .scroll-bar:vertical .thumb{
+    -fx-background-color: derive(black, 90%);
+    -fx-background-insets: 0,0,0;
+    -fx-background-radius: 0em;
+}
+.tree-table-view .scroll-bar:vertical .increment-button,.tree-table-view decrement-button{
+    -fx-background-color: transparent;
+    -fx-border-color: derive(gray,80%);
+}
+
+.tree-table-view .scroll-bar .thumb:hover,
+.tree-table-view .scroll-bar .thumb:pressed{
+    -fx-animated: true;
+    -fx-background-color: derive(black,50%);
+    
+}
+.jfx-progress-bar .bar{
+    -fx-background-color:  #1976d2;
+}
+
+
+.jfx-popup-container {
+    -fx-background-color: WHITE;
+}
+.jfx-popup .list-view{
+    -fx-background-color: white;
+    
+}
+.jfx-popup .list-view .list-cell:hover{
+       -fx-background-color: rgba(0,0,0,.21);
+    
+}
+.jfx-popup .list-view .list-cell .jfx-rippler{
+      -fx-rippler-fill: rgba(0,0,0,.35);
+    
+}
+
+
+.jfx-popup .list-view .list-cell .label{
+      -fx-rippler-fill: rgba(0,0,0,.35);
+    
+}
+

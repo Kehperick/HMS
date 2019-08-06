@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.jfx-snackbar-content{
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    
+}
+.jfx-snackbar-toast{
+    -fx-text-fill: #e53935;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size:14px;
+}
+
+
+.jfx-snackbar-action{
+    -fx-text-fill: white;
+     -fx-font-family:'Century Gothic';
+    -fx-font-size:14px;
+}
+
